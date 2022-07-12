@@ -85,6 +85,10 @@ html body {
   margin-bottom: 2rem;
 }
 
+.flexContainer__contact a{
+  text-decoration: none;
+}
+
 button{
   margin: 0 auto;
   display: block;
