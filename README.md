@@ -1,2 +1,0 @@
-# gixi-lym.github.io
-
