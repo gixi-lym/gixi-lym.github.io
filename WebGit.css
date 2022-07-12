@@ -7,6 +7,13 @@ html body {
 
 
 /*MOON*/
+#imgMoon{
+  width: 220px;
+  height: 220px;
+  transform: translate(240px,-60px);
+  filter: drop-shadow( 0 0 100px #656565);
+}
+/*
 .moon{
   background-image: linear-gradient(to right top, #000000, #0c0c0c, #151515, #1c1c1c, #232323);
   width: 9.375rem;
@@ -52,7 +59,7 @@ html body {
   width: 2.2rem;
   height: 2.8rem;
 }
-
+*/
 
 
 /*CONTAINER*/
