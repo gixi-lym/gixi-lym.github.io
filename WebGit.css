@@ -1,0 +1,165 @@
+html body {
+  background:#000 url(http://1.bp.blogspot.com/-q7NYia_DjQI/U4t7_J4gwwI/AAAAAAAAMKo/nru4YxfjK6I/s1600/estrellas.png) repeat top center;
+  color:white;
+  margin: 0%;
+}
+
+
+
+/*MOON*/
+.moon{
+  background-image: linear-gradient(to right top, #000000, #0c0c0c, #151515, #1c1c1c, #232323);
+  width: 9.375rem;
+  height: 9.375rem;
+  border-bottom: 0.25rem solid #4b4b4b;
+  border-left: 0.063rem solid #5e5e5e;
+  border-radius: 0 0 0 12.5rem;
+  float: right;
+  box-shadow: 0 0 30px 30px #1f1e1e;
+}
+
+.moon div{
+  background-image: radial-gradient(circle, #000000, #0c0c0c, #151515, #1c1c1c, #232323);;
+  border: .6px double rgb(89, 88, 88);
+  border-radius: 50%;
+}
+
+.moon .moon__childOne{
+  position: relative;
+  left: 9px;
+  top: 1px;
+  width: 3rem;
+  height: 3.6rem;
+}
+.moon .moon__childTwo{
+  position: relative;
+  left: 83px;
+  top: -55px;
+  width: 4rem;
+  height: 4rem;
+}
+.moon .moon__childTrhee{
+  position: relative;
+  left: 60px;
+  top: -50px;
+  width: 1.8rem;
+  height: 1.2rem;
+}
+.moon .moon__childFour{
+  position: relative;
+  left: 110px;
+  top: -50px;
+  width: 2.2rem;
+  height: 2.8rem;
+}
+
+
+
+/*CONTAINER*/
+.flexContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.flexContainer .flexContainer__child{
+  width: 100vw;
+  height: 100vh;
+}
+
+.flexContainer h1{
+  text-align: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  margin-top: 13rem;
+  display: block;
+}
+
+
+
+/*CONTACTO*/
+.flexContainer__contact{
+  display: block;
+  width: 100vw;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}
+
+button{
+  margin: 0 auto;
+  display: block;
+  height: 3.8rem;
+  background-image: linear-gradient(to top, #000000, rgb(62, 70, 138));
+  border-radius: .7rem;
+  border: none;
+  box-shadow: 0 0 0.813rem rgba(255, 255, 0, 0.51);
+  animation-name: anim;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
+
+button span{
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.08rem;
+}
+
+@keyframes anim {
+  0%{
+    transform: scale(1.05) ; 
+    }
+  50%{
+    transform: scale(1.13);
+  }
+  100%{
+      transform: scale(1.05);
+    }
+}
+
+
+
+/*ESTRELLAS*/
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+.estrellas {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+}
+.estrellas{
+background:transparent url(http://3.bp.blogspot.com/-FwB8aSiMBmI/U4t9MkimRrI/AAAAAAAAMK0/FAlqX8ZFyu8/s1600/twinkling.png) repeat top center;
+z-index:-2;
+
+-moz-animation:move-twink-back 100s linear infinite;
+-ms-animation:move-twink-back 100s linear infinite;
+-o-animation:move-twink-back 100s linear infinite;
+-webkit-animation:move-twink-back 100s linear infinite;
+animation:move-twink-back 100s linear infinite;
+}
+
+
+
+
+
+
