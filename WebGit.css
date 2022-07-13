@@ -1,3 +1,10 @@
+/* *:not(path):not(g) {
+  color: hsla(210,100%,100%,0.9) !important;
+  background:hsla(210,100%,50%,0.5) !important;
+  background:hsla(210,100%,50%,0.5) !important;
+  outline: solid 0.25rem hsla(210,100%,100%,0.5) !important;
+} */
+
 html body {
   background:#000 url(http://1.bp.blogspot.com/-q7NYia_DjQI/U4t7_J4gwwI/AAAAAAAAMKo/nru4YxfjK6I/s1600/estrellas.png) repeat top center;
   color:white;
@@ -8,10 +15,12 @@ html body {
 
 /*MOON*/
 #imgMoon{
-  width: 220px;
-  height: 220px;
-  transform: translate(240px,-60px);
+  position: fixed;
+  width:13.75rem;
+  height: 13.75rem;
   filter: drop-shadow( 0 0 100px #656565);
+  left: 80%;
+  bottom: 60%;
 }
 /*
 .moon{
@@ -79,7 +88,6 @@ html body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 13rem;
   display: block;
-
   font-size: 3rem;
   background-image: linear-gradient(260deg, #7026f4, #3cff64);
   -webkit-text-fill-color: transparent;
@@ -90,7 +98,8 @@ html body {
 
 /*CONTACTO*/
 .flexContainer__contact{
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 100vw;
   margin-top: 8rem;
   margin-bottom: 2rem;
@@ -100,25 +109,28 @@ html body {
   text-decoration: none;
 }
 
-button{
-  margin: 0 auto;
-  display: block;
-  height: 3.8rem;
-  background-image: linear-gradient(to top, #000000, rgb(62, 70, 138));
+#button{
+  text-align: center;
+  width: 10rem;
+  height: 3rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   border-radius: .7rem;
   border: none;
-  box-shadow: 0 0 0.813rem rgba(255, 255, 0, 0.51);
+  box-shadow: 0 0 1rem rgba(171, 205, 255, 0.51);
   animation-name: anim;
   animation-duration: 3.5s;
   animation-iteration-count: infinite;
 }
 
-button span{
+#button span{
+  line-height: 3rem;
   font-size: 1.3rem;
   font-weight: 600;
   font-family:Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.05rem;
+  background-image: linear-gradient(260deg, #f5cd2b, #b2452d);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 @keyframes anim {
@@ -165,7 +177,6 @@ display:block;
 .estrellas{
 background:transparent url(http://3.bp.blogspot.com/-FwB8aSiMBmI/U4t9MkimRrI/AAAAAAAAMK0/FAlqX8ZFyu8/s1600/twinkling.png) repeat top center;
 z-index:-2;
-
 -moz-animation:move-twink-back 100s linear infinite;
 -ms-animation:move-twink-back 100s linear infinite;
 -o-animation:move-twink-back 100s linear infinite;
