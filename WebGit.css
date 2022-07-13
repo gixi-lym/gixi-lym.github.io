@@ -2,8 +2,8 @@ html body {
   background:#000 url(http://1.bp.blogspot.com/-q7NYia_DjQI/U4t7_J4gwwI/AAAAAAAAMKo/nru4YxfjK6I/s1600/estrellas.png) repeat top center;
   color:white;
   margin: 0%;
+  overflow-x: hidden;
 }
-
 
 
 
@@ -13,10 +13,10 @@ html body {
   width:13.75rem;
   height: 13.75rem;
   filter: drop-shadow( 0 0 100px #656565);
-  left: 68%;
-  top: -10%;
+  bottom: 0;
+  top:0;
+  right: 0;
 }
-
 
 
 
@@ -37,7 +37,7 @@ html body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 13rem;
   display: block;
-  font-size: 3rem;
+  font-size:3rem;
   background-image: linear-gradient(260deg, #7026f4, #3cff64);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -84,13 +84,13 @@ html body {
 
 @keyframes anim {
   0%{
-    transform: scale(1.05) ; 
+    transform: scale(1.25) ; 
     }
   50%{
-    transform: scale(1.13);
+    transform: scale(1.5);
   }
   100%{
-      transform: scale(1.05);
+      transform: scale(1.25);
     }
 }
 
@@ -132,8 +132,4 @@ z-index:-2;
 -webkit-animation:move-twink-back 100s linear infinite;
 animation:move-twink-back 100s linear infinite;
 }
-
-
-
-
 
