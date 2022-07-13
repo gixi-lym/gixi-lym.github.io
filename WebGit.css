@@ -9,7 +9,7 @@ html body {
 
 /*MOON*/
 #imgMoon{
-  position: fixed;
+  position: absolute;
   width:13.75rem;
   height: 13.75rem;
   filter: drop-shadow( 0 0 100px #656565);
